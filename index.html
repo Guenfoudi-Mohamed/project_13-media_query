@@ -1,146 +1,129 @@
-<!DOCTYPE html>
-<html dir="ltr" lang="en">
-    <head>
-        <title>project_13-media_query</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width , initiale-scale=1.0">
-        <link rel="stylesheet" href="icon_css/all.css" type="text/css"> <!-- for icon -->
-        <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- for fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Abel&family=Oswald:wght@300;400&display=swap" rel="stylesheet"> <!-- for fonts --> 
-        <link rel="stylesheet" href="project_13-media_query.css" type="text/css">
-    </head>
-    <body>
-        <!-- start header -->
-        <header>
-            <!-- start container -->
-            <div class="container">
-                <!-- start navbar -->
-                <div class="navbar">
-                    <!-- start logo -->
-                    <div class="logo">
-                        <h1>loopstudios</h1>
-                    </div>
-                    <!-- start list -->
-                    <div class="list">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Carees</a></li>
-                        <li><a href="#">Event</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">Support</a></li>
-                    </div>
-                    <!-- start humbrger -->
-                    <label class="humbrger" id="check_1">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                    </label>
-                </div>
-                <!-- start content_text -->
-                <div class="content_text">
-                    <h1>IMMERSIVE<br>EXPERIENCES<br>THAT DELIVER</h1>
-                </div>
-            </div>
-        </header>
-        <!-- end header -->
-        <!-- start main -->
-        <main>
-            <!-- start section_1 -->
-            <div class="section_1">
-                <div class="img"><img src="images/desktop/image.jpg" alt="boys"></div>
-                <!-- start content_text -->
-                <div class="content_text">
-                    <h1>THE LEADER IN INTERACTIVE VR</h1>
-                    <p>Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe . Our award-winning creation have transformed businesses through digital experiences that bind to their brand.</p>
-                </div>
-            </div>
-            <!-- satrt section_2 -->
-            <div class="section_2">
-                <!-- start content_top -->
-                <div class="content_top">
-                    <h1>OUR CREATIONS</h1>
-                    <input type="button" value="SEE ALL">
-                </div>
-                <!-- start content_bottom -->
-                <div class="content_bottom">
-                    <div class="content">
-                        <div class="img 1">
-                            <img src="images/desktop/image-deep-earth.jpg" alt="img_1">
-                            <div class="bg">
-                                <h1>DEEP EARTH</h1>
-                            </div>
-                        </div>
-                        <div class="img 2">
-                            <img src="images/desktop/image-night-arcade.jpg" alt="img_2">
-                            <div class="bg">
-                                <h1>DEEP EARTH</h1>
-                            </div>
-                        </div>
-                        <div class="img 3">
-                            <img src="images/desktop/image-soccer-team.jpg" alt="img_3">
-                            <div class="bg">
-                                <h1>DEEP EARTH</h1>
-                            </div>
-                        </div>
-                        <div class="img 4">
-                            <img src="images/desktop/image-grid.jpg" alt="img_4">
-                            <div class="bg">
-                                <h1>DEEP EARTH</h1>
-                            </div>
-                        </div>
-                        <div class="img 5">
-                            <img src="images/desktop/image-from-above.jpg" alt="img_5">
-                            <div class="bg">
-                                <h1>DEEP EARTH</h1>
-                            </div>
-                        </div>
-                        <div class="img 6">
-                            <img src="images/desktop/image-pocket-borealis.jpg" alt="img_6">
-                            <div class="bg">
-                                <h1>DEEP EARTH</h1>
-                            </div>
-                        </div>
-                        <div class="img 7">
-                            <img src="images/desktop/image-curiosity.jpg" alt="img_7">
-                            <div class="bg">
-                                <h1>DEEP EARTH</h1>
-                            </div>
-                        </div>
-                        <div class="img 8">
-                            <img src="images/desktop/image-fisheye.jpg" alt="img_8">
-                            <div class="bg">
-                                <h1>DEEP EARTH</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end content_bottom -->
-            </div>
-        </main>
-        <!-- end main -->
-        <!-- start footer -->
-        <footer>
-            <div class="container">
-                <div class="content_left">
-                    <h2>loopstudios</h2>
-                    <div class="list_footer">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Events</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">Support</a></li>
-                    </div>
-                </div>
-                <div class="content_right">
-                    <div class="list_footer">
-                        <li><a href="#" title="facebook"><i class="fab fa-facebook-square"></i></a></li>
-                        <li><a href="#" title="twitter"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#" title="pinterest"><i class="fab fa-pinterest"></i></a></li>
-                        <li><a href="#" title="instagram"><i class="fab fa-instagram"></i></a></li>
-                    </div>
-                    <p><a href="#"><i class="far fa-copyright"></i></a>2021 | Loopstudios. All rights reserved.</p>
-                </div>
-            </div>
-        </footer>
-        <!-- end footer -->
-    </body>
-</html>
+*{margin: 0px;padding: 0px;box-sizing: border-box;outline: none;text-decoration: none;list-style: none;}
+/* start body */
+body{font-family:'Abel', 'Oswald', sans-serif;max-width: 1440px;margin: 0 auto;min-height: 100vh;}
+body input[id="check_list"]{display: none;}
+body input[id="check_list"]:checked ~ header .container .navbar .list{max-height: 500px;} 
+/* start header */
+body header{width: 100%;min-height: 600px;background-image: url('\images/desktop/image-hero.jpg');background-repeat: no-repeat;background-size:100% 100%;}
+    /* start container */
+body header .container .con{width: 100%;background-color:rgba(0, 0, 0, 0);}
+        /* start navbar */
+body header .container  .navbar{width:80%;margin:0px auto; display: flex;justify-content: space-between;align-items: center;position: relative;padding:30px 0px;}
+body header .container  .navbar .logo h1{color: #fff;}
+            /* start list */
+body header .container  .navbar .list{transition:max-height 1s;}            
+body header .container  .navbar .list li{display: inline;}
+body header .container  .navbar .list li:hover a{border-bottom: 2px solid white;}
+body header .container  .navbar .list li a{display: inline-block;color: #fff;margin: 0px 15px;font-size: 18px;border-bottom: 2px solid transparent;font-weight: bold;}
+body header .container  .navbar .list li:last-child a{margin-right: 0px;}
+            /* start humbrger */
+body header .container  .navbar .humbrger{width: 30px;height: 21px;display: none;justify-content: space-between;flex-direction: column;position:absolute;top:40px;right: 0px;cursor: pointer;}
+body header .container  .navbar .humbrger .bar{width:100%;height:3px;border-radius:5px; background-color: #fff;border: 1px solid #000;padding: 1px;}
+        /* start content_text */
+body header .container .content_text{width: 80%;margin: auto;position: relative;min-height:calc(600px - 100px); }
+body header .container .content_text h1{color: #fff;font-size: 40px;position: absolute;top: 50%;transform: translateY(-50%); -webkit-text-stroke: .5px black;letter-spacing: 8px;display: inline-block;border: 3px solid #fff;outline: 1.5px solid #000;padding: 10px;}
+/* start media query =>=> header */
+        @media (min-width:280px) and (max-width:910px){
+                body header .container .con{width: 100%;background-color:rgba(0, 0, 0, 0.3);}
+                body header .container  .navbar{flex-direction: column;align-items: flex-start;}
+                body header .container  .navbar .list{max-height:0px;overflow: hidden;position: relative;top: 15px;}
+                body header .container  .navbar .list li{display: block;}
+                body header .container  .navbar .list li a{margin:5px 0px;}
+                body header .container  .navbar .humbrger{display: flex;}
+        }
+        @media (min-width:280px) and (max-width:640px){
+                body header .container .content_text h1{font-size: 5.5vw;left: 50%;transform: translate(-50%,-50%); -webkit-text-stroke: white;}
+        }
+/* end header */
+/* start main */
+        /* start section_1 */
+main{width:100%;}
+main .section_1{width: 80%;margin: auto;padding-top: 80px;display: flex;justify-content: space-between;align-items: flex-end;position: relative;}
+main .section_1 .img img{width: 100%;display: block;}
+main .section_1 .content_text{padding: 50px 0px 0px 50px;width: 34em;position: absolute;right: 0px;background: #fff;}
+main .section_1 .content_text h1{font-size: 52px;letter-spacing: 3px;word-spacing: 10px;}
+main .section_1 .content_text p{font-size: 20px;text-align: justify;}
+/* start media query =>=> section_1 */
+        @media (min-width:280px) and (max-width:910px){
+                main .section_1{flex-direction: column;align-items: center;justify-content: center;}
+                main .section_1 .content_text{position: static;max-width:34em;padding:10px;margin-top: 15px;}
+                main .section_1 .content_text h1{text-align: center;font-size: 34px;width: 65%;margin: 0px auto;}
+                main .section_1 .content_text p{font-size: 17px;text-align: justify; margin-top: 10px;}
+        }
+        @media (min-width:280px) and (max-width:685px){
+                main .section_1 .content_text{max-width:100%;}
+                main .section_1 .content_text h1{font-size: 5.3vw;width: 75%;}
+                main .section_1 .content_text p{text-align: center;}
+        }
+/* end media query =>=> section_1 */
+        /* start section_2 */
+main .section_2{width: 80%;margin:auto;padding: 80px 0px;position: relative;}
+                /* start content_top */
+main .section_2 .content_top{display: flex;justify-content: space-between;align-items: center;padding-bottom: 80px;}
+main .section_2 .content_top h1{font-size: 40px;}
+main .section_2 .content_top input[value="SEE ALL"]{background-color: #fff;border: 1.5px solid #000;color: #000;padding:5px 25px;font-size: 20px;cursor: pointer;}
+main .section_2 .content_top input[value="SEE ALL"]:hover{background-color: #000;color: #fff;}
+/* start media query =>=> section_1  => content_top */
+@media (min-width:280px) and (max-width:540px){
+        main .section_2{width: 80%;margin:auto;padding: 80px 0px 100px 0px;}
+        main .section_2 .content_top{justify-content: center;padding-bottom: 20px;}
+        main .section_2 .content_top h1{text-align: center;}
+        main .section_2 .content_top input[value="SEE ALL"]{position: absolute;bottom: 40px;left: 50%;transform: translateX(-50%);}
+}
+                /* start content_bottom */
+main .section_2 .content_bottom{width: 100%;}
+main .section_2 .content_bottom .content{display:flex;justify-content: center;align-items: center;flex-wrap: wrap;width: 100%;}
+main .section_2 .content_bottom .content .img{position: relative;width: 217px;height: 450px;margin: 12px;overflow: hidden;border: 2px solid white;outline: 1px solid #000;cursor: pointer;}
+main .section_2 .content_bottom .content .img:hover img{transform:scale(1.04);}
+main .section_2 .content_bottom .content .img:hover .bg{background-image:linear-gradient(to top,rgba(0, 0, 0, .5),rgba(255, 255, 255, 0));}
+main .section_2 .content_bottom .content .img img{position: absolute;top: 0px;width: 100%;height: 100%;transition:transform 1s;}
+main .section_2 .content_bottom .content .img .bg{position: absolute;top: 0px;width: 100%;height: 100%;background-image:linear-gradient(to top,rgba(0, 0, 0, 0.3),rgba(255, 255, 255, 0.2));}
+main .section_2 .content_bottom .content .img .bg h1{position: absolute;bottom: 15px;text-align: center;width: 100%;color: #fff;}
+/* start media query =>=> section_1  => content_bottom */
+@media (min-width:280px) and (max-width:602px){
+        main .section_2 .content_bottom .content > .img{width: 100%;height: 160px;background-repeat: no-repeat;background-size: 100% 100%;background-position: center;}        
+        main .section_2 .content_bottom .content > .img > img{display: none;}
+        main .section_2 .content_bottom .content > .img:first-child{background-image: url('images/mobile/image-deep-earth.jpg');}
+        main .section_2 .content_bottom .content > .img:nth-child(2){background-image: url('images/mobile/image-night-arcade.jpg');}
+        main .section_2 .content_bottom .content > .img:nth-child(3){background-image: url('images/mobile/image-soccer-team.jpg');}
+        main .section_2 .content_bottom .content > .img:nth-child(4){background-image: url('images/mobile/image-grid.jpg');}
+        main .section_2 .content_bottom .content > .img:nth-child(5){background-image: url('images/mobile/image-from-above.jpg');}
+        main .section_2 .content_bottom .content > .img:nth-child(6){background-image: url('images/mobile/image-pocket-borealis.jpg');}
+        main .section_2 .content_bottom .content > .img:nth-child(7){background-image: url('images/mobile/image-curiosity.jpg');}
+        main .section_2 .content_bottom .content > .img:last-child{background-image: url('images/mobile/image-fisheye.jpg');}
+        main .section_2 .content_bottom .content .img .bg h1{text-align: left; position: absolute;TOP: 50%;LEFT: 15PX;WIDTH: 135px;transform:translateY(-15%);color: #fff;}
+        main .section_2 .content_bottom .content .img:nth-child(4) .bg h1 br{display: block;}
+}
+/* end main */
+/* start footer */
+footer{width:100%;padding: 40px;background-color:#000;}
+footer .container{width:85%;margin: auto;display: flex;justify-content: space-between;align-items: center;flex-wrap: wrap;}
+footer .container .content_left h2{color: #fff;}
+        /* start content_left */
+footer .container .content_left .list_footer{margin-top: 15px;}
+footer .container .content_left .list_footer li{display: inline-block;}
+footer .container .content_left .list_footer li:first-child a{margin-left: 0px;}
+footer .container .content_left .list_footer li a{display: block;color: #fff;font-size: 18px;margin: 0px 5px;}
+footer .container .content_left .list_footer li:hover a{text-decoration:underline;}
+        /* start content_right */
+footer .container .content_right .list_footer{float: right;}         
+footer .container .content_right .list_footer li{display: inline-block;}
+footer .container .content_right .list_footer li:first-child a{margin-right: 0px;}
+footer .container .content_right .list_footer li a{display: block;color: #fff;font-size: 20px;margin: 0px 5px;}
+footer .container .content_right .list_footer li:nth-child(1):hover a{color: #3B5998;}
+footer .container .content_right .list_footer li:nth-child(2):hover a{color: #55ACEE;}
+footer .container .content_right .list_footer li:nth-child(3):hover a{color: #cd1d1f;}
+footer .container .content_right .list_footer li:nth-child(4):hover a{color: #3F729B;}
+footer .container .content_right p{float: right;clear: both;margin-top: 5px;}
+footer .container .content_right p ,a{color: #fff;}
+/* start media query =>=> footer */
+@media (min-width:280px) and (max-width:775px){
+        footer .container{flex-direction: column;justify-content: center;align-items: center;}
+        footer .container .content_left h2{text-align: center;}
+        footer .container .content_left .list_footer li{display: block;}
+        footer .container .content_left .list_footer li a{text-align: center;margin: 7px auto;}
+        footer .container .content_right{margin-top: 25px;}
+        footer .container .content_right .list_footer{float:none;display: flex;justify-content: center;}     
+        footer .container .content_right p{float: none;clear: none;text-align: center;margin-top: 10px;}
+}
+/* end footer */
